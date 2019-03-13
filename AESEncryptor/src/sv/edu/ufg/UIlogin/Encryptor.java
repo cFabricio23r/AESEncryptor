@@ -48,6 +48,7 @@ public class Encryptor extends javax.swing.JFrame {
         jBencrt = new javax.swing.JButton();
         jBsalir = new javax.swing.JButton();
         jBencra = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
         jPInstruccion = new javax.swing.JPanel();
         jPtexto = new javax.swing.JPanel();
@@ -63,6 +64,7 @@ public class Encryptor extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jParchivo = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLopenm = new javax.swing.JLabel();
@@ -82,7 +84,7 @@ public class Encryptor extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1000, 690));
         setSize(new java.awt.Dimension(1000, 675));
 
-        jPleft.setBackground(new java.awt.Color(0, 204, 0));
+        jPleft.setBackground(new java.awt.Color(51, 153, 0));
         jPleft.setPreferredSize(new java.awt.Dimension(350, 650));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
@@ -92,7 +94,7 @@ public class Encryptor extends javax.swing.JFrame {
         jLuser.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLuser.setForeground(new java.awt.Color(255, 255, 255));
 
-        jBencrt.setBackground(new java.awt.Color(0, 204, 0));
+        jBencrt.setBackground(new java.awt.Color(51, 153, 0));
         jBencrt.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jBencrt.setForeground(new java.awt.Color(255, 255, 255));
         jBencrt.setText("Encriptar Texto");
@@ -109,7 +111,7 @@ public class Encryptor extends javax.swing.JFrame {
             }
         });
 
-        jBsalir.setBackground(new java.awt.Color(0, 204, 0));
+        jBsalir.setBackground(new java.awt.Color(0, 153, 0));
         jBsalir.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jBsalir.setForeground(new java.awt.Color(255, 255, 255));
         jBsalir.setText("Salir");
@@ -134,7 +136,7 @@ public class Encryptor extends javax.swing.JFrame {
             }
         });
 
-        jBencra.setBackground(new java.awt.Color(0, 204, 0));
+        jBencra.setBackground(new java.awt.Color(51, 153, 0));
         jBencra.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jBencra.setForeground(new java.awt.Color(255, 255, 255));
         jBencra.setText("Encriptar Archivo");
@@ -159,39 +161,49 @@ public class Encryptor extends javax.swing.JFrame {
             }
         });
 
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/usuario.png"))); // NOI18N
+
         javax.swing.GroupLayout jPleftLayout = new javax.swing.GroupLayout(jPleft);
         jPleft.setLayout(jPleftLayout);
         jPleftLayout.setHorizontalGroup(
             jPleftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPleftLayout.createSequentialGroup()
                 .addGroup(jPleftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPleftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPleftLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jLuser, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(48, 48, 48))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPleftLayout.createSequentialGroup()
-                            .addGap(65, 65, 65)
-                            .addComponent(jLabel1)))
-                    .addComponent(jBencrt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBencra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBsalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPleftLayout.createSequentialGroup()
+                        .addGroup(jPleftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jBsalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPleftLayout.createSequentialGroup()
+                                .addGap(62, 62, 62)
+                                .addComponent(jLabel1))
+                            .addGroup(jPleftLayout.createSequentialGroup()
+                                .addGap(50, 50, 50)
+                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPleftLayout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addComponent(jLuser, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPleftLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPleftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jBencrt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBencra, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
         jPleftLayout.setVerticalGroup(
             jPleftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPleftLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 188, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLuser, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(59, 59, 59)
+                .addGap(34, 34, 34)
                 .addComponent(jBencrt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jBencra, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
-                .addComponent(jBsalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBsalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jLayeredPane1.setPreferredSize(new java.awt.Dimension(650, 650));
@@ -269,7 +281,7 @@ public class Encryptor extends javax.swing.JFrame {
         jTsecKey.setBackground(new java.awt.Color(0, 0, 0));
         jTsecKey.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
         jTsecKey.setForeground(new java.awt.Color(0, 204, 0));
-        jPtexto.add(jTsecKey, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 190, -1));
+        jPtexto.add(jTsecKey, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, 190, -1));
 
         jLabel4.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -279,6 +291,9 @@ public class Encryptor extends javax.swing.JFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Fondo2.png"))); // NOI18N
         jPtexto.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/usuario.png"))); // NOI18N
+        jPtexto.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 1990, 2040));
 
         jParchivo.setBackground(new java.awt.Color(51, 51, 51));
         jParchivo.setToolTipText("");
@@ -290,9 +305,9 @@ public class Encryptor extends javax.swing.JFrame {
         jLabel5.setText("Seleccionar Archivo");
         jParchivo.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, -1, -1));
 
-        jLopenm.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLopenm.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLopenm.setForeground(new java.awt.Color(102, 102, 255));
-        jParchivo.add(jLopenm, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 280, 30));
+        jParchivo.add(jLopenm, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, 490, 40));
 
         jBaEncrypt.setBackground(new java.awt.Color(0, 0, 0));
         jBaEncrypt.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
@@ -329,10 +344,12 @@ public class Encryptor extends javax.swing.JFrame {
             }
         });
         jParchivo.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, -1, -1));
-        jParchivo.add(jLmensajefinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, 220, 30));
+
+        jLmensajefinal.setForeground(new java.awt.Color(0, 204, 0));
+        jParchivo.add(jLmensajefinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 450, 480, 30));
 
         jLsalidam.setForeground(new java.awt.Color(102, 255, 102));
-        jParchivo.add(jLsalidam, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 250, 30));
+        jParchivo.add(jLsalidam, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 530, 30));
 
         jBopenar.setBackground(new java.awt.Color(0, 0, 0));
         jBopenar.setFont(new java.awt.Font("Consolas", 0, 32)); // NOI18N
@@ -376,7 +393,7 @@ public class Encryptor extends javax.swing.JFrame {
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPInstruccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPInstruccion, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPtexto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -396,8 +413,8 @@ public class Encryptor extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPleft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
+            .addComponent(jPleft, javax.swing.GroupLayout.DEFAULT_SIZE, 690, Short.MAX_VALUE)
         );
 
         pack();
@@ -538,6 +555,8 @@ public class Encryptor extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
